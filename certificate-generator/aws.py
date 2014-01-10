@@ -1,0 +1,52 @@
+"""
+Production configuration for certificate controller
+"""
+import json
+import os
+
+from .logsettings import get_logger_config
+from .settings import *
+import logging
+
+SERVICE_VARIANT = os.environ.get('SERVICE_VARIANT', '')
+if SERVICE_VARIANT:
+    CONFIG_PREFIX = SERVICE_VARIANT + "."
+
+with open(ENV_ROOT / CONFIG_PREFIX + "env.json") as env_file:
+    ENV_TOKENS = json.load(env_file)
+
+BUG = ENV_TOKENS.get('DEBUG', False)
+if isinstance(DEBUG,basestring):
+    DEBUG= DEBUG.lower()=="true"
+TEMPLATE_DEBUG = ENV_TOKENS.get('TEMPLATE_DEBUG', False)
+if isinstance(TEMPLATE_DEBUG,basestring):
+    TEMPLATE_DEBUG= TEMPLATE_DEBUG.lower()=="true"
+PRINT_QUERIES = ENV_TOKENS.get('PRINT_QUERIES', False)
+if isinstance(PRINT_QUERIES,basestring):
+    PRINT_QUERIES= PRINT_QUERIES.lower()=="true"
+
+
+ #General
+REQUESTS_TIMEOUT = int(ENV_TOKENS.get('REQUESTS_TIMEOUT', REQUESTS_TIMEOUT))
+TIME_BETWEEN_XQUEUE_PULLS = int(TIME_BETWEEN_XQUEUE_PULLS)
+S3_BUCKETNAME=ENV_TOKENS.get('S3_BUCKETNAME',"Certificate")
+CERTIFICATE_QUEUES_TO_PULL_FROM= ENV_TOKENS.get('CERTIFICATE_QUEUES_TO_PULL_FROM', CERTIFICATE_QUEUES_TO_PULL_FROM)
+#Time zone (shows up in logs)
+TIME_ZONE = ENV_TOKENS.get('TIME_ZONE', TIME_ZONE)
+
+local_loglevel = ENV_TOKENS.get('LOCAL_LOGLEVEL', 'INFO')
+LOG_DIR = ENV_TOKENS.get("LOG_DIR", ENV_ROOT / "log")
+LOGGING = get_logger_config(debug=DEBUG)
+
+with open(ENV_ROOT / CONFIG_PREFIX + "auth.json") as auth_file:
+    AUTH_TOKENS = json.load(auth_file)
+
+XQUEUE_INTERFACE = AUTH_TOKENS['XQUEUE_INTERFACE']
+CERTIFICATE_CONTROLLER_INTERFACE = AUTH_TOKENS['CERTIFICATE_CONTROLLER_INTERFACE']
+DATABASES = AUTH_TOKENS['DATABASES']
+
+AWS_ACCESS_KEY_ID = AUTH_TOKENS.get("AWS_ACCESS_KEY_ID","")
+AWS_SECRET_ACCESS_KEY = AUTH_TOKENS.get("AWS_SECRET_ACCESS_KEY","")
+
+BROKER_URL= AUTH_TOKENS.get('BROKER_URL',BROKER_URL)
+CELERY_RESULT_BACKEND=AUTH_TOKENS.get('CELERY_RESULT_BACKEND',CELERY_RESULT_BACKEND)

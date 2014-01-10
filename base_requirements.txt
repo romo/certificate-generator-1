@@ -1,0 +1,13 @@
+Django==1.4.3
+dogstatsd-python==0.2
+path.py==3.0
+pip
+South==0.7.6
+reportlab==2.6
+svglib==0.6.3
+requests==1.1.0
+pytz==2012h
+boto==2.6.0
+lxml==3.0.1
+django-celery==3.0.11
+django-nose==1.1
