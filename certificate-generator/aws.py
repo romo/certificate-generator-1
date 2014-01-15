@@ -15,7 +15,7 @@ if SERVICE_VARIANT:
 with open(ENV_ROOT / CONFIG_PREFIX + "env.json") as env_file:
     ENV_TOKENS = json.load(env_file)
 
-BUG = ENV_TOKENS.get('DEBUG', False)
+DEBUG = ENV_TOKENS.get('DEBUG', False)
 if isinstance(DEBUG,basestring):
     DEBUG= DEBUG.lower()=="true"
 TEMPLATE_DEBUG = ENV_TOKENS.get('TEMPLATE_DEBUG', False)
