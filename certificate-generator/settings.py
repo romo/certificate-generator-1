@@ -169,11 +169,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'controller',
-    'staff_grading',
-    'south',
-    'peer_grading',
-    'ml_grading',
-    'metrics',
     'djcelery',
     )
 
