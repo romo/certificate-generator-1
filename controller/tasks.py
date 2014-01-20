@@ -52,12 +52,12 @@ def pull_from_single_queue(queue_name,xqueue_session):
     try:
         #Get and parse queue objects
         success, queue_length= get_queue_length(queue_name,xqueue_session)
-        log.info("queue_length: {}".format(queue_length))
+        log.info("success:{}  queue_length: {}".format(success,queue_length))
         #Check to see if the grading_controller server is up so that we can post to it
 
 
         #Only post while we were able to get a queue length from the xqueue, there are items in the queue, and the grading controller is up for us to post to.
-        while success and queue_length>0 and is_alive:
+        while success and queue_length>0:
             #Sleep for some time to allow other pull_from_xqueue processes to get behind/ahead
             time_sleep_value = random.uniform(0, .1)
             time.sleep(time_sleep_value)
