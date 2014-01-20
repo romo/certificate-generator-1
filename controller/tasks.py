@@ -77,7 +77,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,
                 #     )
-                drawing = svg2rlg("templates/certificate-templates.svg")
+                drawing = svg2rlg("templates/certificate-template.svg")
                 pdf = renderPDF.drawToString(drawing)
                 s3_key = make_hashkey(xqueue_header)
                 pdf_url = util.upload_to_s3(pdf,"test",s3_key)
