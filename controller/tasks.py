@@ -48,7 +48,7 @@ def pull_from_xqueue():
   # Log out of the controller session, which deletes the database row.
   #util.controller_logout(controller_session)
 
-def pull_from_single_grading_queue(queue_name,xqueue_session):
+def pull_from_single_queue(queue_name,xqueue_session):
     try:
         #Get and parse queue objects
         success, queue_length= get_queue_length(queue_name,xqueue_session)
