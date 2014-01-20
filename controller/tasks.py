@@ -52,7 +52,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
     try:
         #Get and parse queue objects
         success, queue_length= get_queue_length(queue_name,xqueue_session)
-
+        log.info("queue_length: {}".format(queue_length))
         #Check to see if the grading_controller server is up so that we can post to it
 
 
@@ -63,6 +63,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
             time.sleep(time_sleep_value)
 
             success, queue_item = get_from_queue(queue_name, xqueue_session)
+            log.info("queue_item: {}".format(queue_item))
             success, content = util.parse_xobject(queue_item, queue_name)
 
             #Post to grading controller here!
