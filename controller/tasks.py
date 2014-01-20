@@ -122,6 +122,7 @@ def get_queue_length(queue_name,xqueue_session):
     Returns the length of the queue
     """
     try:
+        log.info("\n\txqueue_session: {}\n\turl: {}\n\tqueue_name: {}\n".format(xqueue_session,urlparse.urljoin(settings.XQUEUE_INTERFACE['url'], project_urls.XqueueURLs.get_queuelen),queue_name))
         success, response = util._http_get(xqueue_session,
                                            urlparse.urljoin(settings.XQUEUE_INTERFACE['url'], project_urls.XqueueURLs.get_queuelen),
                                            {'queue_name': queue_name})
