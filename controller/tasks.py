@@ -79,7 +79,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,gm
                 #     )
-              f= NamedTemporaryFile(delete=false)
+              f= NamedTemporaryFile(delete=False)
               f.close()
               log.info(f.name)
               x = Popen(['/usr/bin/inkscape', 'templates/certificate-template.svg', \
