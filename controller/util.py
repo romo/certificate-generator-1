@@ -16,6 +16,7 @@ from django.contrib.auth.models import User, Group, Permission
 from django.db import connection
 
 import traceback
+import hashlib
 from lxml.html.clean import Cleaner
 
 log = logging.getLogger(__name__)
