@@ -83,7 +83,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
                   svg=myfile.read().replace('\n', '')
                 doc = xml.dom.minidom.parseString(svg.encode( "utf-8" ))
                 svg = doc.documentElement
-                svgRenderer = SvgRenderer()
+                svgRenderer = SvgRenderer('templates/certificate-template.svg')
                 svgRenderer.render(svg)
                 drawing = svgRenderer.finish()
                 pdf = renderPDF.drawToString(drawing)
