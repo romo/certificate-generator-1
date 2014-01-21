@@ -91,6 +91,9 @@ def pull_from_single_queue(queue_name,xqueue_session):
                   pdf_url = util.upload_to_s3(f.name,"test",s3_key)
 
                   log.info("pdf_url: {}".format(pdf_url) )
+                  reply = json.loads(content["xqueue_body"])
+                  reply["certificate_url"]=pdf_url
+                  content["xqueue_body"]= json.dumps(reply)
                   post_one_submission_back_to_queue(content,xqueue_session)
 
                   os.remove(f.name)
