@@ -18,6 +18,7 @@ from celery.task import periodic_task, task
 import json
 import urlparse
 import xml.dom.minidom
+import codecs
 
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF
@@ -76,10 +77,9 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     urlparse.urljoin(settings.CERTIFICATE_CONTROLLER_INTERFACE['url'],
                 #                      post_url),
                 #     content,
-                #     settings.REQUESTS_TIMEOUT,
+                #     settings.REQUESTS_TIMEOUT,gm
                 #     )
-                with open ("templates/certificate-template.svg", "r") as myfile:
-                  svg=myfile.read().replace('\n', '')
+                svg= codecs.open('templates/certificate-template.svg', encoding='utf-8')
                 doc = xml.dom.minidom.parseString(svg.encode( "utf-8" ))
                 svg = doc.documentElement
                 svgRenderer = SvgRenderer()
