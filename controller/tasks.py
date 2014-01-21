@@ -79,7 +79,8 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,gm
                 #     )
-                svg= codecs.open('templates/certificate-template.svg', encoding='utf-8')
+                with codecs.open('templates/certificate-template.svg', encoding='utf-8') as myfile:
+                  svg=myfile.read().replace('\n', '')
                 doc = xml.dom.minidom.parseString(svg.encode( "utf-8" ))
                 svg = doc.documentElement
                 svgRenderer = SvgRenderer()
