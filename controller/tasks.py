@@ -20,6 +20,7 @@ import urlparse
 import xml.dom.minidom
 import codecs
 
+import cairosvg
 from svglib.svglib import SvgRenderer
 from reportlab.graphics import renderPDF
 
@@ -79,14 +80,16 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,gm
                 #     )
+
                 with codecs.open('templates/certificate-template.svg', encoding='utf-8') as myfile:
                   svg=myfile.read().replace('\n', '')
-                doc = xml.dom.minidom.parseString(svg.encode( "utf-8" ))
-                svg = doc.documentElement
-                svgRenderer = SvgRenderer('templates/certificate-template.svg')
-                svgRenderer.render(svg)
-                drawing = svgRenderer.finish()
-                pdf = renderPDF.drawToString(drawing)
+                pdf = cairosvg.svg2pdf(svg)
+                #doc = xml.dom.minidom.parseString(svg.encode( "utf-8" ))
+                #svg = doc.documentElement
+                #svgRenderer = SvgRenderer('templates/certificate-template.svg')
+                #svgRenderer.render(svg)
+                #drawing = svgRenderer.finish()
+                #pdf = renderPDF.drawToString(drawing)
                 s3_key = make_hashkey(xqueue_header)
                 pdf_url = util.upload_to_s3(pdf,"test",s3_key)
 
