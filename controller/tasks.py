@@ -20,7 +20,7 @@ import urlparse
 import xml.dom.minidom
 import codecs
 
-from svglib.svglib import svg2rlg
+from svglib.svglib import SvgRenderer
 from reportlab.graphics import renderPDF
 
 log = logging.getLogger(__name__)
