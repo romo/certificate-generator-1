@@ -286,8 +286,10 @@ def upload_to_s3(string_to_upload, path, name):
     try:
         conn = S3Connection(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY)
         bucketname = settings.S3_BUCKETNAME
-        bucket = conn.create_bucket(bucketname.lower())
-
+        try:
+            bucket = conn.create_bucket(bucketname.lower())
+        except Exception:
+            bucket = conn.get_bucket(bucket_name.lower())
         prefix = getattr(settings, 'S3_PATH_PREFIX')
         path = '{0}/{1}'.format(prefix, path)
 
