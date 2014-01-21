@@ -90,10 +90,10 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #svgRenderer.render(svg)
                 #drawing = svgRenderer.finish()
                 #pdf = renderPDF.drawToString(drawing)
-                s3_key = util.make_hashkey(xqueue_header)
+                s3_key = util.make_hashkey(content["xqueue_header"])
                 pdf_url = util.upload_to_s3(pdf,"test",s3_key)
                 log.info("pdf_url: {}".format(pdf_url) )
-                submission["xqueue_header"].pdf_url = pdf_url
+                submission["xqueue_body"].pdf_url = pdf_url
                 post_one_submission_back_to_queue(content,xqueue_session)
 
                 statsd.increment("open_ended_assessment.grading_controller.pull_from_xqueue",
