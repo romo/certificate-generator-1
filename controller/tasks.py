@@ -6,6 +6,7 @@ import logging
 from statsd import statsd
 import random
 from django import db
+from tempfile import NamedTemporaryFile
 
 from . import util
 import gc
@@ -20,9 +21,7 @@ import urlparse
 import xml.dom.minidom
 import codecs
 
-import cairosvg
-from svglib.svglib import SvgRenderer
-from reportlab.graphics import renderPDF
+from subprocess import Popen
 
 log = logging.getLogger(__name__)
 
@@ -80,24 +79,30 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,gm
                 #     )
+              with NamedTemporaryFile() as f:
+                  x = Popen(['/usr/bin/inkscape', 'templates/certificate-template.svg', \
+                      '--export-pdf=%s' % f.file.name])
+                  try:
+                      waitForResponse(x)
+                      pdf = f.read().replace('\n', '')
+                      s3_key = util.make_hashkey(content["xqueue_header"])
+                      pdf_url = util.upload_to_s3(pdf,"test",s3_key)
 
-                with codecs.open('templates/certificate-template.svg', encoding='utf-8') as myfile:
-                  svg=myfile.read().replace('\n', '')
-                pdf = cairosvg.svg2pdf(svg)
-                #doc = xml.dom.minidom.parseString(svg.encode( "utf-8" ))
-                #svg = doc.documentElement
-                #svgRenderer = SvgRenderer('templates/certificate-template.svg')
-                #svgRenderer.render(svg)
-                #drawing = svgRenderer.finish()
-                #pdf = renderPDF.drawToString(drawing)
-                s3_key = util.make_hashkey(content["xqueue_header"])
-                pdf_url = util.upload_to_s3(pdf,"test",s3_key)
+                      log.info("pdf_url: {}".format(pdf_url) )
+                      post_one_submission_back_to_queue(content,xqueue_session)
 
-                log.info("pdf_url: {}".format(pdf_url) )
-                post_one_submission_back_to_queue(content,xqueue_session)
+                  except OSError, e:
+                      return False
 
-                statsd.increment("open_ended_assessment.grading_controller.pull_from_xqueue",
-                                 tags=["success:True", "queue_name:{0}".format(queue_name)])
+                  def waitForResponse(x):
+                      out, err = x.communicate()
+                      if x.returncode < 0:
+                          r = "Popen returncode: " + str(x.returncode)
+                          raise OSError(r)
+
+
+                  statsd.increment("open_ended_assessment.grading_controller.pull_from_xqueue",
+                                   tags=["success:True", "queue_name:{0}".format(queue_name)])
             else:
                 log.error("Error getting queue item or no queue items to get.")
                 statsd.increment("open_ended_assessment.grading_controller.pull_from_xqueue",
