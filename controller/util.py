@@ -276,7 +276,7 @@ def sanitize_html(text):
         clean_html = text
     return clean_html
 
-def upload_to_s3(file_pointer, path, name):
+def upload_to_s3(file_path, path, name):
     '''
     Upload file to S3 using provided keyname.
 
@@ -295,7 +295,7 @@ def upload_to_s3(file_pointer, path, name):
 
         k = Key(bucket)
         k.key = '{path}/{name}'.format(path=path, name=name)
-        k.set_contents_from_file(file_pointer)
+        k.set_contents_from_filename(file_path)
         public_url = k.generate_url(60*60*24*365) # URL timeout in seconds.
 
         return True, public_url

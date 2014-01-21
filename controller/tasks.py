@@ -88,7 +88,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
                   util.waitForResponse(x)
                   f.close()
                   s3_key = util.make_hashkey(content["xqueue_header"])
-                  pdf_url = util.upload_to_s3(f,"test",s3_key)
+                  pdf_url = util.upload_to_s3(f.name,"test",s3_key)
 
                   log.info("pdf_url: {}".format(pdf_url) )
                   post_one_submission_back_to_queue(content,xqueue_session)
