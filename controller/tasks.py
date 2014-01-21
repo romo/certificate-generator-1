@@ -85,13 +85,12 @@ def pull_from_single_queue(queue_name,xqueue_session):
               x = Popen(['/usr/bin/inkscape', 'templates/certificate-template.svg', \
                   '--export-pdf=%s' % f.name])
               try:
+                  reply = json.loads(content["xqueue_body"])
                   util.waitForResponse(x)
                   f.close()
                   s3_key = util.make_hashkey(content["xqueue_header"])
-                  pdf_url = util.upload_to_s3(f.name,"test",s3_key)
-
+                  pdf_url = util.upload_to_s3(f.name,reply["username"],s3_key)
                   log.info("pdf_url: {}".format(pdf_url) )
-                  reply = json.loads(content["xqueue_body"])
                   reply["certificate_url"]=pdf_url
                   content["xqueue_body"]= json.dumps(reply)
                   post_one_submission_back_to_queue(content,xqueue_session)
@@ -129,8 +128,6 @@ def post_one_submission_back_to_queue(submission,xqueue_session):
     if success:
         log.debug("Successful post back to xqueue! Success: {0} Message: {1} Xqueue Header: {2} Xqueue body: {3}".format(
             success,msg, submission["xqueue_header"], submission["xqueue_body"]))
-        submission.posted_results_back_to_queue = True
-        submission.save()
     else:
         log.warning("Could not post back.  Error: {0}".format(msg))
 
