@@ -5,6 +5,7 @@ pip
 South==0.7.6
 reportlab==2.6
 svglib==0.6.3
+cairocffi
 cairosvg
 requests==1.1.0
 pytz==2012h
