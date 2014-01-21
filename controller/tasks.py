@@ -17,6 +17,7 @@ from celery.task import periodic_task, task
 
 import json
 import urlparse
+import xml.dom.minidom
 
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF
@@ -77,8 +78,13 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,
                 #     )
-                drawing = svg2rlg("templates/certificate-template.svg")
-                drawing.renderScale=1.0
+                with open ("templates/certificate-template.svg", "r") as myfile:
+                  svg=myfile.read().replace('\n', '')
+                doc = xml.dom.minidom.parseString(svg.encode( "utf-8" ))
+                svg = doc.documentElement
+                svgRenderer = SvgRenderer()
+                svgRenderer.render(svg)
+                drawing = svgRenderer.finish()
                 pdf = renderPDF.drawToString(drawing)
                 s3_key = make_hashkey(xqueue_header)
                 pdf_url = util.upload_to_s3(pdf,"test",s3_key)
