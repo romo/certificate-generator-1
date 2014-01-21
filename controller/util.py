@@ -300,3 +300,11 @@ def upload_to_s3(string_to_upload, path, name):
         error = "Could not connect to S3."
         log.exception(error)
         return False, error
+
+def make_hashkey(seed):
+    '''
+    Generate a hashkey (string)
+    '''
+    h = hashlib.md5()
+    h.update(str(seed))
+    return h.hexdigest()

@@ -90,9 +90,10 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #svgRenderer.render(svg)
                 #drawing = svgRenderer.finish()
                 #pdf = renderPDF.drawToString(drawing)
-                s3_key = make_hashkey(xqueue_header)
+                s3_key = util.make_hashkey(xqueue_header)
                 pdf_url = util.upload_to_s3(pdf,"test",s3_key)
-
+                log.info("pdf_url: {}".format(pdf_url) )
+                submission["xqueue_header"].pdf_url = pdf_url
                 post_one_submission_back_to_queue(content,xqueue_session)
 
                 statsd.increment("open_ended_assessment.grading_controller.pull_from_xqueue",
@@ -109,12 +110,11 @@ def pull_from_single_queue(queue_name,xqueue_session):
                          tags=["success:Exception", "queue_name:{0}".format(queue_name)])
 
 
-def post_one_submission_back_to_queue(content,xqueue_session):
-    xqueue_header, xqueue_body = util.create_xqueue_header_and_body(submission)
+def post_one_submission_back_to_queue(submission,xqueue_session):
     (success, msg) = util.post_results_to_xqueue(
         xqueue_session,
-        json.dumps(content["xqueue_header"]),
-        json.dumps(content["xqueue_body"]),
+        json.dumps(submission["xqueue_header"]),
+        json.dumps(submission["xqueue_body"]),
         )
 
     statsd.increment("open_ended_assessment.grading_controller.post_to_xqueue",
