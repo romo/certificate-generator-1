@@ -289,7 +289,7 @@ def upload_to_s3(string_to_upload, path, name):
         try:
             bucket = conn.create_bucket(bucketname.lower())
         except Exception:
-            bucket = conn.get_bucket(bucket_name.lower())
+            bucket = conn.get_bucket(bucketname.lower())
         prefix = getattr(settings, 'S3_PATH_PREFIX')
         path = '{0}/{1}'.format(prefix, path)
 
