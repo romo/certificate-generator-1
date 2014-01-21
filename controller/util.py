@@ -311,3 +311,10 @@ def make_hashkey(seed):
     h = hashlib.md5()
     h.update(str(seed))
     return h.hexdigest()
+
+
+def waitForResponse(x):
+    out, err = x.communicate()
+    if x.returncode < 0:
+      r = "Popen returncode: " + str(x.returncode)
+      raise OSError(r)

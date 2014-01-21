@@ -83,7 +83,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
                   x = Popen(['/usr/bin/inkscape', 'templates/certificate-template.svg', \
                       '--export-pdf=%s' % f.file.name])
                   try:
-                      waitForResponse(x)
+                      util.waitForResponse(x)
                       pdf = f.read().replace('\n', '')
                       s3_key = util.make_hashkey(content["xqueue_header"])
                       pdf_url = util.upload_to_s3(pdf,"test",s3_key)
@@ -93,12 +93,6 @@ def pull_from_single_queue(queue_name,xqueue_session):
 
                   except OSError, e:
                       return False
-
-                  def waitForResponse(x):
-                      out, err = x.communicate()
-                      if x.returncode < 0:
-                          r = "Popen returncode: " + str(x.returncode)
-                          raise OSError(r)
 
 
                   statsd.increment("open_ended_assessment.grading_controller.pull_from_xqueue",
