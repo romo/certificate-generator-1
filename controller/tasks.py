@@ -114,8 +114,8 @@ def pull_from_single_queue(queue_name,xqueue_session):
 def post_one_submission_back_to_queue(submission,xqueue_session):
     (success, msg) = util.post_results_to_xqueue(
         xqueue_session,
-        json.dumps(submission["xqueue_header"]),
-        json.dumps(submission["xqueue_body"]),
+        submission["xqueue_header"],
+        submission["xqueue_body"],
         )
 
     statsd.increment("open_ended_assessment.grading_controller.post_to_xqueue",
