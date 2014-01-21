@@ -84,9 +84,8 @@ def pull_from_single_queue(queue_name,xqueue_session):
                       '--export-pdf=%s' % f.file.name])
                   try:
                       util.waitForResponse(x)
-                      pdf = f.read().replace('\n', '')
                       s3_key = util.make_hashkey(content["xqueue_header"])
-                      pdf_url = util.upload_to_s3(pdf,"test",s3_key)
+                      pdf_url = util.upload_to_s3(f,"test",s3_key)
 
                       log.info("pdf_url: {}".format(pdf_url) )
                       post_one_submission_back_to_queue(content,xqueue_session)
@@ -121,7 +120,7 @@ def post_one_submission_back_to_queue(submission,xqueue_session):
 
     if success:
         log.debug("Successful post back to xqueue! Success: {0} Message: {1} Xqueue Header: {2} Xqueue body: {3}".format(
-            success,msg, xqueue_header, xqueue_body))
+            success,msg, submission["xqueue_header"], submission["xqueue_body"]))
         submission.posted_results_back_to_queue = True
         submission.save()
     else:
