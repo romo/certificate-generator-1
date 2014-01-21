@@ -22,6 +22,7 @@ CERTIFICATE_QUEUES_TO_PULL_FROM= "Certificate"
 REQUESTS_TIMEOUT = 60    # seconds
 TIME_BETWEEN_XQUEUE_PULLS = 50 #seconds.  Time between pull_from_xqueue checking to see if new submissions are on queue.
 S3_BUCKETNAME="Certificate"
+S3_PATH_PREFIX="certificate"
 
 DATABASES = {
     'default': {
