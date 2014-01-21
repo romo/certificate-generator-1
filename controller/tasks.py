@@ -79,19 +79,24 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,gm
                 #     )
-              with NamedTemporaryFile() as f:
-                  x = Popen(['/usr/bin/inkscape', 'templates/certificate-template.svg', \
-                      '--export-pdf=%s' % f.file.name])
-                  try:
-                      util.waitForResponse(x)
-                      s3_key = util.make_hashkey(content["xqueue_header"])
-                      pdf_url = util.upload_to_s3(f,"test",s3_key)
+              f= NamedTemporaryFile(delete=false)
+              f.close()
+              log.info(f.name)
+              x = Popen(['/usr/bin/inkscape', 'templates/certificate-template.svg', \
+                  '--export-pdf=%s' % f.name])
+              try:
+                  util.waitForResponse(x)
+                  f.close()
+                  s3_key = util.make_hashkey(content["xqueue_header"])
+                  pdf_url = util.upload_to_s3(f,"test",s3_key)
 
-                      log.info("pdf_url: {}".format(pdf_url) )
-                      post_one_submission_back_to_queue(content,xqueue_session)
+                  log.info("pdf_url: {}".format(pdf_url) )
+                  post_one_submission_back_to_queue(content,xqueue_session)
 
-                  except OSError, e:
-                      return False
+                  os.remove(f.name)
+              except OSError, e:
+                  os.remove(f.name)
+                  return False
 
 
                   statsd.increment("open_ended_assessment.grading_controller.pull_from_xqueue",
