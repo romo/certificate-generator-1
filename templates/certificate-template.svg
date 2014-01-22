@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
+<svg:svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -23,9 +22,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.498795"
-     inkscape:cx="404.65269"
-     inkscape:cy="332.43259"
+     inkscape:zoom="0.93821054"
+     inkscape:cx="426.36902"
+     inkscape:cy="366.56271"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,90 +34,90 @@
      inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
-  <defs
+  <svg:defs
      id="defs4">
-    <clipPath
+    <svg:clipPath
        id="clipPath3922-85"
        clipPathUnits="userSpaceOnUse">
-      <path
+      <svg:path
          sodipodi:nodetypes="cczcc"
          inkscape:connector-curvature="0"
          id="path3924-7"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none" />
-    </clipPath>
-    <clipPath
+    </svg:clipPath>
+    <svg:clipPath
        id="clipPath3922-8"
        clipPathUnits="userSpaceOnUse">
-      <path
+      <svg:path
          sodipodi:nodetypes="cczcc"
          inkscape:connector-curvature="0"
          id="path3924-8"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none" />
-    </clipPath>
-    <clipPath
+    </svg:clipPath>
+    <svg:clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3922-4">
-      <path
+      <svg:path
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          id="path3924-5"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cczcc" />
-    </clipPath>
-    <clipPath
+    </svg:clipPath>
+    <svg:clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3922">
-      <path
+      <svg:path
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          id="path3924"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cczcc" />
-    </clipPath>
-    <clipPath
+    </svg:clipPath>
+    <svg:clipPath
        id="clipPath3922-85-5"
        clipPathUnits="userSpaceOnUse">
-      <path
+      <svg:path
          sodipodi:nodetypes="cczcc"
          inkscape:connector-curvature="0"
          id="path3924-7-1"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none" />
-    </clipPath>
-    <clipPath
+    </svg:clipPath>
+    <svg:clipPath
        id="clipPath3922-8-8"
        clipPathUnits="userSpaceOnUse">
-      <path
+      <svg:path
          sodipodi:nodetypes="cczcc"
          inkscape:connector-curvature="0"
          id="path3924-8-2"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none" />
-    </clipPath>
-    <clipPath
+    </svg:clipPath>
+    <svg:clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3922-4-4">
-      <path
+      <svg:path
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          id="path3924-5-8"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cczcc" />
-    </clipPath>
-    <clipPath
+    </svg:clipPath>
+    <svg:clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3922-40">
-      <path
+      <svg:path
          style="fill:#f00000;fill-opacity:0.07692309;stroke:none"
          d="m 157.69922,468.14135 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137 l 0,-104.17187 z"
          id="path3924-9"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cczcc" />
-    </clipPath>
-  </defs>
-  <metadata
+    </svg:clipPath>
+  </svg:defs>
+  <svg:metadata
      id="metadata7">
     <rdf:RDF>
       <cc:Work
@@ -129,177 +128,176 @@
         <dc:title />
       </cc:Work>
     </rdf:RDF>
-  </metadata>
-  <g
+  </svg:metadata>
+  <svg:g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-287.3625)">
-    <path
+    <svg:path
        sodipodi:nodetypes="cccccc"
        inkscape:connector-curvature="0"
        id="path3807"
        d="m 53.872165,477.08577 100.005125,0 0,143.44167 -100.005125,0 35,-71.72084 z"
        style="fill:#084766;fill-opacity:1;stroke:none" />
-    <path
+    <svg:path
        style="fill:#084766;fill-opacity:1;stroke:none"
        d="m 936.12783,477.08578 -100.00513,0 0,143.44167 100.00513,0 -35,-71.72084 z"
        id="rect3804"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccc" />
-    <rect
+    <svg:rect
        style="fill:#19739d;fill-opacity:1;stroke:none"
        id="rect2985"
        width="769.73621"
        height="143.44167"
        x="110.1319"
        y="442.43341" />
-    <path
+    <svg:path
        id="path3792"
        d="m 153.87729,585.78598 -43.74539,0 43.74539,34.74146 0,-34.74146 z"
        style="fill:#2837ab;fill-opacity:1;stroke:none"
        inkscape:label="Triangle"
        inkscape:connector-curvature="0" />
-    <path
+    <svg:path
        inkscape:connector-curvature="0"
        inkscape:label="Triangle"
        style="fill:#2837ab;fill-opacity:1;stroke:none"
        d="m 836.1227,585.78598 43.74541,0 -43.74541,34.74146 0,-34.74146 z"
        id="path3802" />
-    <text
+    <svg:text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
        x="218.29492"
        y="527.35431"
        id="text3809"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"><svg:tspan
          sodipodi:role="line"
          id="tspan3811"
          x="218.29492"
          y="527.35431"
-         style="font-size:56px">Certificat de Formation</tspan></text>
-    <text
+         style="font-size:56px">Certificat de Formation</svg:tspan></svg:text>
+    <svg:text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
        x="366.77234"
        y="632.578"
        id="text3829"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"><svg:tspan
          sodipodi:role="line"
          id="tspan3831"
          x="366.77234"
          y="632.578"
-         style="font-size:24px;font-style:oblique;-inkscape-font-specification:Philosopher Oblique">Ce document atteste que </tspan></text>
-    <text
+         style="font-size:24px;font-style:oblique;-inkscape-font-specification:Philosopher Oblique">Ce document atteste que </svg:tspan></svg:text>
+    <svg:text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
        x="494.61584"
        y="732.35437"
        id="text3833"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"><svg:tspan
          sodipodi:role="line"
          x="497.61584"
          y="732.35437"
          id="tspan3837"
-         style="font-size:24px;font-style:oblique;-inkscape-font-specification:Philosopher Oblique">a valid\u00e9 la formation  </tspan></text>
-    <text
+         style="font-size:24px;font-style:oblique;-inkscape-font-specification:Philosopher Oblique">a valid\u00e9 la formation  </svg:tspan></svg:text>
+    <svg:text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
        x="495.10583"
        y="854.56293"
        id="text3839"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"><svg:tspan
          sodipodi:role="line"
          x="498.10583"
          y="854.56293"
          style="font-size:24px;font-style:oblique;text-align:center;text-anchor:middle;-inkscape-font-specification:Philosopher Oblique"
-         id="tspan3266">r\u00e9alis\u00e9 en partenariat avec Melior et Maximus </tspan><tspan
+         id="tspan3266">r\u00e9alis\u00e9e en partenariat avec Melior et Maximus </svg:tspan><svg:tspan
          sodipodi:role="line"
          x="495.10583"
          y="884.56293"
          style="font-size:24px;font-style:oblique;text-align:center;text-anchor:middle;-inkscape-font-specification:Philosopher Oblique"
-         id="tspan3270">qui s'est d\u00e9roul\u00e9e du 25/11/2013 au 06/01/2014</tspan><tspan
+         id="tspan3270">qui s'est d\u00e9roul\u00e9e du 25/11/2013 au 06/01/2014</svg:tspan><svg:tspan
          sodipodi:role="line"
          x="495.10583"
          y="914.56293"
          id="tspan3843"
-         style="font-size:24px;font-style:oblique;text-align:center;text-anchor:middle;-inkscape-font-specification:Philosopher Oblique">sur la plateforme neodemia.com</tspan></text>
-    <flowRoot
+         style="font-size:24px;font-style:oblique;text-align:center;text-anchor:middle;-inkscape-font-specification:Philosopher Oblique">sur la plateforme neodemia.com</svg:tspan></svg:text>
+    <svg:flowRoot
        xml:space="preserve"
        id="flowRoot3845"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion3847"><rect
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion3847"><svg:rect
            id="rect3849"
            width="537.14288"
            height="57.142857"
            x="160"
-           y="640.71429" /></flowRegion><flowPara
-         id="flowPara3851" /></flowRoot>    <text
+           y="640.71429" /></svg:flowRegion><svg:flowPara
+         id="flowPara3851" /></svg:flowRoot>    <svg:text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
-       x="405.11169"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher;text-align:center;text-anchor:middle"
+       x="488.65796"
        y="685.04919"
        id="text4412"
        sodipodi:linespacing="125%"
        inkscape:export-xdpi="78.720001"
-       inkscape:export-ydpi="78.720001"><tspan
+       inkscape:export-ydpi="78.720001"
+       class="center"><svg:tspan
          sodipodi:role="line"
          id="tspan4414"
-         x="405.11169"
-         y="685.04919"
-         style="font-size:28px">==user_name==</tspan></text>
-    <text
+         style="font-size:28px"
+         transform="translate(-11.212219,0)">==user_name==</svg:tspan></svg:text>
+    <svg:text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
-       x="369.50885"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher;text-align:center;text-anchor:middle"
+       x="488.65796"
        y="789.6828"
        id="text4416"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       class="center"><svg:tspan
          sodipodi:role="line"
          id="tspan4418"
-         x="369.50885"
-         y="789.6828"
-         style="font-size:28px">&quot;==course_name==&quot;</tspan></text>
-    <flowRoot
+         style="font-size:28px">&quot;==course_name==&quot;</svg:tspan></svg:text>
+    <svg:flowRoot
        xml:space="preserve"
        id="flowRoot4420"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion4422"><rect
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion4422"><svg:rect
            id="rect4424"
            width="228.30188"
            height="127.35849"
            x="404.71698"
-           y="27.264151" /></flowRegion><flowPara
-         id="flowPara4426" /></flowRoot>    <flowRoot
+           y="27.264151" /></svg:flowRegion><svg:flowPara
+         id="flowPara4426" /></svg:flowRoot>    <svg:flowRoot
        xml:space="preserve"
        id="flowRoot4428"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion4430"><rect
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion4430"><svg:rect
            id="rect4432"
            width="367.92453"
            height="110.37736"
            x="362.26416"
-           y="41.415092" /></flowRegion><flowPara
-         id="flowPara4434" /></flowRoot>    <flowRoot
+           y="41.415092" /></svg:flowRegion><svg:flowPara
+         id="flowPara4434" /></svg:flowRoot>    <svg:flowRoot
        xml:space="preserve"
        id="flowRoot4446"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion4448"><rect
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion4448"><svg:rect
            id="rect4450"
            width="696.22644"
            height="66.037735"
            x="97.169815"
-           y="650.84906" /></flowRegion><flowPara
-         id="flowPara4452" /></flowRoot>    <g
+           y="650.84906" /></svg:flowRegion><svg:flowPara
+         id="flowPara4452" /></svg:flowRoot>    <svg:g
        id="g6399"
        transform="translate(8.6789059,-8)">
-      <g
+      <svg:g
          transform="matrix(0.25839793,0,0,0.25839793,444.98385,326.92457)"
          id="g6380">
-        <g
+        <svg:g
            id="layer2"
            inkscape:label="fond">
-          <path
+          <svg:path
              sodipodi:type="arc"
              style="fill:#19739d;fill-opacity:1;stroke:none"
              id="path3773"
@@ -309,37 +307,37 @@
              sodipodi:ry="165.09224"
              d="m 390.03244,163.98305 c 0,91.17792 -86.70576,165.09224 -193.66273,165.09224 -106.95698,0 -193.6627398,-73.91432 -193.6627398,-165.09224 0,-91.177929 86.7057598,-165.0922419 193.6627398,-165.0922419 106.95697,0 193.66273,73.9143129 193.66273,165.0922419 z"
              transform="matrix(0.9991597,0,0,1.1720721,-2.6421956,0.8000549)" />
-        </g>
-        <g
+        </svg:g>
+        <svg:g
            id="layer5"
            inkscape:label="academy">
-          <path
+          <svg:path
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              d="M 72.457029,92.167977 193.5,43.402353 312.33124,92.166157"
              id="path3024"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="ccc" />
-          <path
+          <svg:path
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              d="m 82.213388,261.83146 -0.0025,5.85604 -9.75,-0.008 0.0039,15.60156 239.859372,-0.008 0.008,-15.59375 -9.74609,0.004 0,-5.85156"
              id="path3794"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="cccccccc" />
-          <path
+          <svg:path
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              d="m 72.457031,101.91406 0.0039,19.50391 9.753907,0.004 0,9.75001 9.75,-1e-5 0,111.16016 -9.753907,-0.004 -0.0039,11.69921 44.863279,0.004 0,-11.70313 -9.7539,10e-6 0.004,-111.16016 9.75,0 0,-9.75 13.64844,0 -9.2e-4,9.75276 9.76137,-0.002 -0.0104,111.15958 -9.75,1e-5 0.002,11.70396 44.85351,-0.003 -0.004,-11.70051 -9.74609,0 -0.002,-111.15671 9.75006,-0.002 10e-4,-9.74225 13.65133,-0.009 -10e-4,9.75251 9.74761,-0.001 9.9e-4,111.15984 -9.74469,-0.003 -0.005,11.70096 44.85295,-0.008 -9.9e-4,-11.70341 -9.74908,-0.002 -9.9e-4,-111.15249 9.75274,-0.004 -0.001,-9.74883 13.65601,0.0117 -0.004,9.74883 9.75274,-0.001 -0.007,111.15648 -9.74219,-0.004 -0.004,11.70313 44.85938,0.004 0,-11.70312 -9.75513,0.006 10e-4,-111.15849 9.75391,-0.004 0,-9.75 9.74609,0 0,-19.5"
              id="path3796"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccc" />
-        </g>
-      </g>
-      <g
+        </svg:g>
+      </svg:g>
+      <svg:g
          transform="matrix(0.25839793,0,0,0.25839793,724.98385,326.92457)"
          id="g6428">
-        <g
+        <svg:g
            id="layer2-4"
            inkscape:label="fond">
-          <path
+          <svg:path
              sodipodi:type="arc"
              style="fill:#19739d;fill-opacity:1;stroke:none"
              id="path3773-0"
@@ -349,93 +347,93 @@
              sodipodi:ry="165.09224"
              d="m 390.03244,163.98305 c 0,91.17792 -86.70576,165.09224 -193.66273,165.09224 -106.95698,0 -193.6627398,-73.91432 -193.6627398,-165.09224 0,-91.177929 86.7057598,-165.0922419 193.6627398,-165.0922419 106.95697,0 193.66273,73.9143129 193.66273,165.0922419 z"
              transform="matrix(0.9991597,0,0,1.1720721,-2.6421956,0.8000549)" />
-        </g>
-        <g
+        </svg:g>
+        <svg:g
            id="layer4"
            inkscape:label="immeuble">
-          <path
+          <svg:path
              inkscape:connector-curvature="0"
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              d="m 89.46875,70.5625 0,201.9375 -5.5625,0.0312 -5.6875,10.28125 233.78125,0 -6.5625,-10.3125 -5.59375,0 0,-161.75 -104.71875,0 0,13.09375 94.4375,0 0,148.65625 -21.5,0 0,-33.65625 -12.15625,0 0,33.65625 -16.84375,0 0,-33.65625 -12.15625,0 0,33.65625 -18.6875,0 -0.0937,-33.625 -12.15625,0 0.0937,33.625 -17.78125,0.0312 0,-201.96875 -88.8125,0 z m 11.21875,19.625 66.375,0 0,16.84375 -66.375,0 0,-16.84375 z m 0,35.53125 66.375,0 0,14.03125 -66.375,0 0,-14.03125 z m -0.0312,32.71875 66.4375,0 0,14.96875 -66.40625,0 -0.0312,-14.96875 z m 0.0312,33.65625 66.375,0 0,14.96875 -66.375,0 0,-14.96875 z m 0,33.65625 66.375,0 0.0312,14.96875 -66.40625,0 0,-14.96875 z m 20.5625,26.1875 25.25,0 0,21.5 -25.25,0 0,-21.5 z"
              id="path3936" />
-          <path
+          <svg:path
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              d="m 241.87471,96.739139 11.21751,-0.0039 0,-53.291587 -102.85535,-0.0052 0.005,13.09442 91.63271,-0.0026 z"
              id="path4008"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="ccccccc" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010"
              width="12.152442"
              height="12.148778"
              x="196.05887"
              y="143.48721" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5"
              width="12.152442"
              height="12.148778"
              x="226.91154"
              y="143.48459" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5-1"
              width="12.152442"
              height="12.148778"
              x="255.89642"
              y="143.48421" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5-1-7"
              width="12.152442"
              height="12.148778"
              x="255.89902"
              y="174.3425" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5-1-7-1"
              width="12.152442"
              height="12.148778"
              x="226.91501"
              y="174.34105" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5-1-7-1-1"
              width="12.152442"
              height="12.148778"
              x="196.05745"
              y="174.34251" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5-1-7-1-1-5"
              width="12.152442"
              height="12.148778"
              x="196.05659"
              y="207.99983" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5-1-7-1-1-5-2"
              width="12.152442"
              height="12.148778"
              x="226.90993"
              y="208.00485" />
-          <rect
+          <svg:rect
              style="fill:#ffffff;fill-opacity:1;stroke:none"
              id="rect4010-5-1-7-1-1-5-2-7"
              width="12.152442"
              height="12.148778"
              x="255.89642"
              y="207.99983" />
-        </g>
-      </g>
-      <g
+        </svg:g>
+      </svg:g>
+      <svg:g
          transform="matrix(0.25839793,0,0,0.25839792,585,326.79537)"
          id="g6466">
-        <g
+        <svg:g
            id="layer2-9"
            inkscape:label="fond">
-          <path
+          <svg:path
              sodipodi:type="arc"
              style="fill:#19739d;fill-opacity:1;stroke:none"
              id="path3773-4"
@@ -445,202 +443,208 @@
              sodipodi:ry="165.09224"
              d="m 390.03244,163.98305 c 0,91.17792 -86.70576,165.09224 -193.66273,165.09224 -106.95698,0 -193.6627398,-73.91432 -193.6627398,-165.09224 0,-91.177929 86.7057598,-165.0922419 193.6627398,-165.0922419 106.95697,0 193.66273,73.9143129 193.66273,165.0922419 z"
              transform="matrix(0.9991597,0,0,1.1720721,-2.7046956,1.3000549)" />
-        </g>
-        <g
+        </svg:g>
+        <svg:g
            id="layer1-8"
            inkscape:label="etudiant"
            style="display:inline">
-          <g
+          <svg:g
              id="g3779"
              style="fill:#ffffff;fill-opacity:1">
-            <path
+            <svg:path
                sodipodi:nodetypes="cssccc"
                inkscape:connector-curvature="0"
                id="path2998"
                d="m 255.9369,128.42644 c 7.13683,12.6097 -4.76517,26.6629 -26.96685,30.71635 -22.20169,4.05344 -45.98526,-2.88277 -53.12209,-15.49247 -2.72244,-4.81013 -2.85579,-10.3491 -0.0927,-15.15176 l 40.16846,5.95959 z"
                style="fill:#ffffff;fill-opacity:1;stroke:none"
                transform="matrix(1.3203883,0,0,2.2564102,-90.946911,-182.94623)" />
-            <path
+            <svg:path
                sodipodi:nodetypes="cccczcccccccc"
                inkscape:connector-curvature="0"
                id="path2996"
                d="m 194.31992,44.275424 -99.619708,24.1875 21.317798,5.329449 0,21.317796 c 0,0 1.94764,4.003097 3.68962,4.099577 1.74198,0.09648 4.50954,-3.279661 4.50954,-3.279661 l 0,-20.497882 14.96344,3.689619 -0.61494,19.677966 55.75424,13.118642 54.72936,-13.323621 0,-19.063029 44.4804,-11.068857"
                style="fill:#ffffff;fill-opacity:1;stroke:none" />
-            <path
+            <svg:path
                sodipodi:nodetypes="cssscccsssc"
                inkscape:connector-curvature="0"
                id="path3771"
                d="m 81.026668,282.01568 c 0,0 3.243807,-17.34405 7.114222,-26.61208 4.637737,-11.10545 11.610691,-24.78148 19.06303,-34.23146 7.33125,-9.29644 15.87659,-17.87501 25.62235,-24.59746 14.25632,-9.83375 27.87712,-14.14354 27.87712,-14.14354 l 33.20657,38.741 33.20657,-38.53602 c 0,0 13.34022,4.33193 23.36758,10.86388 12.11243,7.89018 22.82804,18.16017 31.77172,29.51695 5.86747,7.45058 15.70851,25.03927 18.5767,34.07872 3.55402,11.20092 6.02075,24.7502 6.02075,24.7502"
                style="fill:#ffffff;fill-opacity:1;stroke:none" />
-          </g>
-        </g>
-      </g>
-      <g
+          </svg:g>
+        </svg:g>
+      </svg:g>
+      <svg:g
          transform="matrix(0.67266767,0,0,0.66732327,42.310652,18.441902)"
          id="g6543">
-        <g
+        <svg:g
            id="layer2-2"
            inkscape:label="fond"
            style="display:none">
-          <image
+          <svg:image
              y="448.07645"
              x="155.07143"
              id="image2994"
              xlink:href="data:image/png;base64,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 "
              height="180"
              width="387" />
-        </g>
-        <g
+        </svg:g>
+        <svg:g
            id="layer3"
            inkscape:label="object">
-          <text
+          <svg:text
              xml:space="preserve"
              style="font-size:40px;font-style:normal;font-weight:normal;line-height:141.99999571%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
              x="189.91611"
              y="482.60333"
              id="text3771"
              sodipodi:linespacing="142%"
-             clip-path="url(#clipPath3922-40)"><tspan
+             clip-path="url(#clipPath3922-40)"><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="482.60333"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
-               id="tspan3777"><tspan
+               id="tspan3777"><svg:tspan
                  dx="-3.039999"
                  id="tspan3779"
-                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le">1 0 1 0 1 0 0</tspan></tspan><tspan
+                 style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le">1 0 1 0 1 0 0</svg:tspan></svg:tspan><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="502.48334"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
                dx="-2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -3.039999"
-               id="tspan3781">1 0 1 1 0 1 1</tspan><tspan
+               id="tspan3781">1 0 1 1 0 1 1</svg:tspan><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="522.36334"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
                dx="-2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -3.039999"
-               id="tspan3783">1 1 1 0 1 1 1</tspan><tspan
+               id="tspan3783">1 1 1 0 1 1 1</svg:tspan><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="542.24335"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
                dx="-25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -3.039999"
-               id="tspan3785">1 1 0 0 1 1 0 1 0</tspan><tspan
+               id="tspan3785">1 1 0 0 1 1 0 1 0</svg:tspan><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="562.12335"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
                dx="-25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -3.039999"
-               id="tspan3787">0 0 1 1 0 1 1 0 0</tspan><tspan
+               id="tspan3787">0 0 1 1 0 1 1 0 0</svg:tspan><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="582.00336"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
                dx="-25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -3.039999"
-               id="tspan3789">1 1 1 0 0 1 0 1 1</tspan><tspan
+               id="tspan3789">1 1 1 0 0 1 0 1 1</svg:tspan><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="601.8833"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
                dx="-25.84 0 0 0 0 0 0 0 0 0 0 0 0 -25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25.84 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -2.8299999 0 0 0 0 0 0 0 0 0 0 0 0 -3.039999"
-               id="tspan3791">1 0 1 1 0 1 0</tspan><tspan
+               id="tspan3791">1 0 1 1 0 1 0</svg:tspan><svg:tspan
                sodipodi:role="line"
                x="189.91611"
                y="621.76331"
                style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:141.99999571%;font-family:Microsoft Tai Le;-inkscape-font-specification:Microsoft Tai Le"
                dx="-3.039999"
-               id="tspan3775" /></text>
-          <path
+               id="tspan3775" /></svg:text>
+          <svg:path
              style="fill:none;stroke:#126f9a;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
              d="m 157.5838,467.48386 0,143.44166 c 0,0 61.30828,0 70.2056,0 8.89732,0 10.77496,-15.82572 10.10152,-31.31473 16.83588,2.52538 29.29443,1.01156 29.29443,-9.09137"
              id="path2997"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="cczcc" />
-          <path
+          <svg:path
              style="fill:#126f9a;fill-opacity:1;stroke:none"
              d="m 165.06715,462.07311 -0.002,75.99515 13.06885,-13.13197 12.94258,13.32138 -0.009,-76.18456"
              id="path3769"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="ccccc" />
-          <path
+          <svg:path
              style="fill:none;stroke:#126f9a;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              d="m 266.93281,578.85317 c -5.66279,14.19176 -17.7492,26.20463 -33.33504,32.07235"
              id="path3926"
              inkscape:connector-curvature="0"
              sodipodi:nodetypes="cc" />
-          <text
+          <svg:text
              xml:space="preserve"
              style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:80.00000119%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
              x="269.28574"
              y="533.07648"
              id="text3025"
-             sodipodi:linespacing="80.000001%"><tspan
+             sodipodi:linespacing="80.000001%"><svg:tspan
                sodipodi:role="line"
                id="tspan3027"
                x="269.28574"
                y="533.07648"
-               style="font-size:98px;line-height:80.00000119%">Neo</tspan><tspan
+               style="font-size:98px;line-height:80.00000119%">Neo</svg:tspan><svg:tspan
                sodipodi:role="line"
                x="269.28574"
                y="611.4765"
                id="tspan3029"
-               style="font-size:98px;line-height:80.00000119%" /></text>
-          <text
+               style="font-size:98px;line-height:80.00000119%" /></svg:text>
+          <svg:text
              xml:space="preserve"
              style="font-size:98px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#126f9a;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
              x="265.71426"
              y="610.93365"
              id="text3031"
-             sodipodi:linespacing="125%"><tspan
+             sodipodi:linespacing="125%"><svg:tspan
                sodipodi:role="line"
                id="tspan3033"
                x="265.71426"
-               y="610.93365">demia</tspan></text>
-        </g>
-      </g>
-    </g>
-    <flowRoot
+               y="610.93365">demia</svg:tspan></svg:text>
+        </svg:g>
+      </svg:g>
+    </svg:g>
+    <svg:flowRoot
        xml:space="preserve"
        id="flowRoot3229"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion3231"><rect
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion3231"><svg:rect
            id="rect3233"
            width="839.02686"
            height="86.184029"
            x="53.231312"
-           y="669.94409" /></flowRegion><flowPara
-         id="flowPara3235" /></flowRoot>    <flowRoot
+           y="669.94409" /></svg:flowRegion><svg:flowPara
+         id="flowPara3235" /></svg:flowRoot>    <svg:flowRoot
        xml:space="preserve"
        id="flowRoot3256"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion3258"><rect
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Philosopher;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Philosopher;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion3258"><svg:rect
            id="rect3260"
            width="480.34921"
            height="326.99234"
            x="288.96997"
-           y="312.53387" /></flowRegion><flowPara
-         id="flowPara3262" /></flowRoot>    <text
+           y="312.53387" /></svg:flowRegion><svg:flowPara
+         id="flowPara3262" /></svg:flowRoot>    <svg:text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Philosopher;-inkscape-font-specification:Philosopher"
        x="265.96451"
        y="1008.0031"
        id="text3272"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"><svg:tspan
          sodipodi:role="line"
          id="tspan3274"
          x="265.96451"
          y="1008.0031"
-         style="font-size:10px">ATTENTION, CE DOCUMENT NE PERMET PAS DE GARANTIR L'IDENTITE DE L'ETUDIANT SUS-NOMME.</tspan></text>
-    <flowRoot
+         style="font-size:10px">ATTENTION, CE DOCUMENT NE PERMET PAS DE GARANTIR L'IDENTITE DE L'ETUDIANT SUS-NOMME.</svg:tspan></svg:text>
+    <svg:flowRoot
        xml:space="preserve"
        id="flowRoot3117"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Brush Script Std;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Brush Script Std;font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion3119"><rect
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Brush Script Std;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Brush Script Std;font-stretch:normal;font-variant:normal"><svg:flowRegion
+         id="flowRegion3119"><svg:rect
            id="rect3121"
            width="655.25208"
            height="92.521088"
            x="187.577"
-           y="595.16675" /></flowRegion><flowPara
-         id="flowPara3123" /></flowRoot>  </g>
-</svg>
+           y="595.16675" /></svg:flowRegion><svg:flowPara
+         id="flowPara3123" /></svg:flowRoot>  </svg:g>
+  <style
+     type="text/css">
+	 .center{
+		text-anchor:middle;
+	 }
+</style>
+</svg:svg>
