@@ -7,7 +7,7 @@ from statsd import statsd
 import random
 from django import db
 from tempfile import NamedTemporaryFile
-
+import re
 from . import util
 import gc
 from statsd import statsd
@@ -24,6 +24,7 @@ import codecs
 from subprocess import Popen
 
 log = logging.getLogger(__name__)
+
 
 @periodic_task(run_every=settings.TIME_BETWEEN_XQUEUE_PULLS)
 @single_instance_task(60*10)
@@ -67,7 +68,19 @@ def pull_from_single_queue(queue_name,xqueue_session):
             success, queue_item = get_from_queue(queue_name, xqueue_session)
             log.info("queue_item: {}".format(queue_item))
             success, content = util.parse_xobject(queue_item, queue_name)
+            body = json.loads(content["xqueue_body"])
+            course_name=body["course_name"]
+            user_name = body ["name"]
 
+            with open('templates/certificate-template.svg', 'r') as f:
+              lines = [line.strip('\n') for line in f.readlines()]
+
+            re.sub(r"{% user_name %}", user_name, lines)
+            re.sub(r"{% course_name %}", course_name, lines)
+
+            svg = NamedTemporaryFile(delete=False)
+            svg.write(lines)
+            svg.flush()
             #Post to grading controller here!
             if  success:
                 #TODO !!!
@@ -82,22 +95,24 @@ def pull_from_single_queue(queue_name,xqueue_session):
               f= NamedTemporaryFile(delete=False)
               f.close()
               log.info(f.name)
-              x = Popen(['/usr/bin/inkscape', 'templates/certificate-template.svg', \
+              x = Popen(['/usr/bin/inkscape', svg.name, \
                   '--export-pdf=%s' % f.name])
               try:
-                  reply = json.loads(content["xqueue_body"])
+
                   util.waitForResponse(x)
                   f.close()
                   s3_key = util.make_hashkey(content["xqueue_header"])
-                  pdf_url = util.upload_to_s3(f.name,reply["username"],s3_key)
-                  log.info("pdf_url: {}".format(pdf_url) )
+                  pdf_url = util.upload_to_s3(f.name,body["username"],s3_key)
+                  log.info("url: {}".format(pdf_url) )
                   reply["certificate_url"]=pdf_url
-                  content["xqueue_body"]= json.dumps(reply)
+                  content["xqueue_body"]= json.dumps(body)
                   post_one_submission_back_to_queue(content,xqueue_session)
 
                   os.remove(f.name)
+                  os.remove(svg.name)
               except OSError, e:
                   os.remove(f.name)
+                  os.remove(svg.name)
                   return False
 
 
