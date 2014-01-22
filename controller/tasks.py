@@ -76,8 +76,8 @@ def pull_from_single_queue(queue_name,xqueue_session):
             log.info("queue_item: {}".format(queue_item))
             success, content = util.parse_xobject(queue_item, queue_name)
             body = json.loads(content["xqueue_body"])
-            course_name=unicode(body["course_name"],'unicode-escape')
-            user_name = unicode(body ["name"],'unicode-escape')
+            course_name=body["course_name"]
+            user_name = body ["name"]
             log.info(u"course_name: {}".format(course_name))
             log.info(u"user_name: {}".format(user_name))
 
