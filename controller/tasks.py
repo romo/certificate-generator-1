@@ -15,7 +15,7 @@ import project_urls
 from . single_instance_task import single_instance_task
 
 from celery.task import periodic_task, task
-
+import os
 import json
 import urlparse
 import xml.dom.minidom
