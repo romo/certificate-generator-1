@@ -60,7 +60,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
 
         lines_template = ""
         with open('templates/certificate-template.svg', 'r') as f:
-          lines_template = [line.strip('\n') for line in f.readlines()]
+          lines_template = "".join([line.strip('\n') for line in f.readlines()])
 
         lines_template=unicode(lines_template,'unicode-escape')
         log.info(u"fichier template: {}".format(lines_template))
