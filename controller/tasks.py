@@ -75,8 +75,8 @@ def pull_from_single_queue(queue_name,xqueue_session):
             with open('templates/certificate-template.svg', 'r') as f:
               lines = [line.strip('\n') for line in f.readlines()]
 
-            re.sub(r"{% user_name %}", user_name, lines)
-            re.sub(r"{% course_name %}", course_name, lines)
+            re.sub(r"==user_name==", user_name, lines)
+            re.sub(r"==course_name==", course_name, lines)
 
             svg = NamedTemporaryFile(delete=False)
             svg.write(lines)
