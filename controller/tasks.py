@@ -107,7 +107,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
 
                   util.waitForResponse(x)
                   f.close()
-                  s3_key = util.make_hashkey(content["xqueue_header"])
+                  s3_key = "{}.{}".format(util.make_hashkey(content["xqueue_header"]),"pdf")
                   pdf_url = util.upload_to_s3(f.name,body["username"],s3_key)
                   log.info("url: {}".format(pdf_url) )
                   body["certificate_url"]=pdf_url
