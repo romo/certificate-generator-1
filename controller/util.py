@@ -292,7 +292,7 @@ def upload_to_s3(file_path, path, name):
             bucket = conn.get_bucket(bucketname.lower())
         prefix = getattr(settings, 'S3_PATH_PREFIX')
         path = u'{0}/{1}'.format(prefix, path)
-        key = u'{path}/{name}'.format(path="résultat", name=name)
+        key = u'{path}/{name}'.format(path=path, name=name)
         key = removeNonAscii(key)
         k = Key(bucket)
         k.key = key
