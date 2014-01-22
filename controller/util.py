@@ -291,11 +291,13 @@ def upload_to_s3(file_path, path, name):
         except Exception:
             bucket = conn.get_bucket(bucketname.lower())
         prefix = getattr(settings, 'S3_PATH_PREFIX')
-        path = '{0}/{1}'.format(prefix, path)
-
+        path = u'{0}/{1}'.format(prefix, path)
+        key = u'{path}/{name}'.format(path=path, name=name)
+        key = removeNonAscii(key)
         k = Key(bucket)
-        k.key = '{path}/{name}'.format(path=path, name=name)
+        k.key = key
         k.set_contents_from_filename(file_path)
+        k.set_acl("public-read")
         public_url = k.generate_url(60*60*24*365) # URL timeout in seconds.
 
         return True, public_url
@@ -318,3 +320,5 @@ def waitForResponse(x):
     if x.returncode < 0:
       r = "Popen returncode: " + str(x.returncode)
       raise OSError(r)
+
+def removeNonAscii(s): return "".join(i for i in s if ord(i)<128)
