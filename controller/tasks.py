@@ -85,7 +85,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
             svg_line=re.sub( re.escape('==course_name=='), course_name, svg_line)
 
             svg_file = NamedTemporaryFile(delete=False)
-            svg_file.write(svg_line)
+            svg_file.write(svg_line.encode("utf8"))
             svg_file.flush()
             #Post to grading controller here!
             if  success:
