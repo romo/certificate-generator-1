@@ -76,8 +76,8 @@ def pull_from_single_queue(queue_name,xqueue_session):
             log.info("queue_item: {}".format(queue_item))
             success, content = util.parse_xobject(queue_item, queue_name)
             body = json.loads(content["xqueue_body"])
-            course_name=body["course_name"]
-            user_name = body ["name"]
+            course_name= 'test' #body["course_name"]
+            user_name = 'test' #body ["name"]
             log.info(u"course_name: {}".format(course_name))
             log.info(u"user_name: {}".format(user_name))
 
@@ -98,7 +98,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
                 #     content,
                 #     settings.REQUESTS_TIMEOUT,gm
                 #     )
-              f= NamedTemporaryFile(delete=False)
+              f= NamedTemporaryFile(delete=False,encoding='utf-8',mode='w+')
               f.close()
               log.info(f.name)
               x = Popen(['/usr/bin/inkscape', svg_file.name, \
