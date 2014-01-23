@@ -76,7 +76,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
             success, content = util.parse_xobject(queue_item, queue_name)
             body = json.loads(content["xqueue_body"])
             course_name= body["course_name"]
-            user_name = body ["name"]
+            user_name = body ["student_name"]
             log.info(u"course_name: {}".format(course_name))
             log.info(u"user_name: {}".format(user_name))
 
@@ -107,11 +107,14 @@ def pull_from_single_queue(queue_name,xqueue_session):
                   util.waitForResponse(x)
                   f.close()
                   s3_key = "{}.{}".format(util.make_hashkey(content["xqueue_header"]),"pdf")
-                  pdf_url = util.upload_to_s3(f.name,body["username"],s3_key)
-                  log.info("url: {}".format(pdf_url) )
-                  body["certificate_url"]=pdf_url
-                  content["xqueue_body"]= json.dumps(body)
-                  post_one_submission_back_to_queue(content,xqueue_session)
+                  success,pdf_url = util.upload_to_s3(f.name,body["student_id"],s3_key)
+                  if success:
+                    log.info("url: {}".format(pdf_url) )
+                    body["certificate_url"]=pdf_url
+                    body["download_uuid"] = ""
+                    body["verify_uuid"] = ""
+                    content["xqueue_body"]= json.dumps(body)
+                    post_one_submission_back_to_queue(content,xqueue_session)
 
                   os.remove(f.name)
                   os.remove(svg_file.name)
