@@ -110,7 +110,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
                   success,pdf_url = util.upload_to_s3(f.name,body["student_id"],s3_key)
                   if success:
                     log.info("url: {}".format(pdf_url) )
-                    body["certificate_url"]=pdf_url
+                    body["url"]=pdf_url
                     body["download_uuid"] = ""
                     body["verify_uuid"] = ""
                     content["xqueue_body"]= json.dumps(body)
