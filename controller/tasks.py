@@ -58,17 +58,21 @@ def pull_from_single_queue(queue_name,xqueue_session):
         log.info("success:{}  queue_length: {}".format(success,queue_length))
         #Check to see if the grading_controller server is up so that we can post to it
 
-        lines_template = ""
-        with open('templates/certificate-template.svg', 'r') as f:
-          lines_template = "".join([line.strip('\n') for line in f.readlines()])
 
-        lines_template=unicode(lines_template,'unicode-escape')
         #Only post while we were able to get a queue length from the xqueue, there are items in the queue, and the grading controller is up for us to post to.
         while success and queue_length>0:
             #Sleep for some time to allow other pull_from_xqueue processes to get behind/ahead
             time_sleep_value = random.uniform(0, .1)
             time.sleep(time_sleep_value)
 
+            template = os.path.splitext(body["template_pdf"])[0] + ".svg"
+            log.info(u"template: {}".format(template))
+
+            lines_template = ""
+            with open("templates/{}".format(template), 'r') as f:
+              lines_template = "".join([line.strip('\n') for line in f.readlines()])
+
+            lines_template=unicode(lines_template,'unicode-escape')
             svg_line=lines_template
 
             success, queue_item = get_from_queue(queue_name, xqueue_session)
@@ -77,6 +81,7 @@ def pull_from_single_queue(queue_name,xqueue_session):
             body = json.loads(content["xqueue_body"])
             course_name= body["course_name"]
             user_name = body ["student_name"]
+
             log.info(u"course_name: {}".format(course_name))
             log.info(u"user_name: {}".format(user_name))
 
