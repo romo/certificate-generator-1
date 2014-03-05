@@ -64,7 +64,13 @@ def pull_from_single_queue(queue_name,xqueue_session):
             #Sleep for some time to allow other pull_from_xqueue processes to get behind/ahead
             time_sleep_value = random.uniform(0, .1)
             time.sleep(time_sleep_value)
+            success, queue_item = get_from_queue(queue_name, xqueue_session)
+            body = json.loads(content["xqueue_body"])
+            course_name= body["course_name"]
+            user_name = body ["student_name"]
 
+            log.info(u"course_name: {}".format(course_name))
+            log.info(u"user_name: {}".format(user_name))
             template = os.path.splitext(body["template_pdf"])[0] + ".svg"
             log.info(u"template: {}".format(template))
 
@@ -75,15 +81,10 @@ def pull_from_single_queue(queue_name,xqueue_session):
             lines_template=unicode(lines_template,'unicode-escape')
             svg_line=lines_template
 
-            success, queue_item = get_from_queue(queue_name, xqueue_session)
+
             log.info("queue_item: {}".format(queue_item))
             success, content = util.parse_xobject(queue_item, queue_name)
-            body = json.loads(content["xqueue_body"])
-            course_name= body["course_name"]
-            user_name = body ["student_name"]
 
-            log.info(u"course_name: {}".format(course_name))
-            log.info(u"user_name: {}".format(user_name))
 
             svg_line=re.sub( re.escape('==user_name==') , user_name, svg_line)
             svg_line=re.sub( re.escape('==course_name=='), course_name, svg_line)
