@@ -65,6 +65,9 @@ def pull_from_single_queue(queue_name,xqueue_session):
             time_sleep_value = random.uniform(0, .1)
             time.sleep(time_sleep_value)
             success, queue_item = get_from_queue(queue_name, xqueue_session)
+
+            log.info("queue_item: {}".format(queue_item))
+            success, content = util.parse_xobject(queue_item, queue_name)
             body = json.loads(content["xqueue_body"])
             course_name= body["course_name"]
             user_name = body ["student_name"]
@@ -81,9 +84,6 @@ def pull_from_single_queue(queue_name,xqueue_session):
             lines_template=unicode(lines_template,'unicode-escape')
             svg_line=lines_template
 
-
-            log.info("queue_item: {}".format(queue_item))
-            success, content = util.parse_xobject(queue_item, queue_name)
 
 
             svg_line=re.sub( re.escape('==user_name==') , user_name, svg_line)
