@@ -184,6 +184,6 @@ AWS_SECRET_ACCESS_KEY= ""
 BROKER_URL = 'redis://localhost:6379/6'
 BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/6'
-CELERY_DEFAULT_QUEUE = 'certificates'
-CELERY_DEFAULT_EXCHANGE = 'certificates'
+CELERY_DEFAULT_QUEUE = 'certificates-celery'
+CELERY_DEFAULT_EXCHANGE = 'certificates-celery-exchange'
 
